@@ -1,25 +1,29 @@
 
 package model;
 
-import javax.swing.JButton;
+import javax.swing.JTextField;
 
-public class GridButtom extends JButton{
-    private Person person;
-    private String hola;
-    public GridButtom(Person person){
-        super(person.toString());
-        this.person = person;
-    }
-    public GridButtom(String hola){
-        this.hola = hola;
+public class GridButtom extends JTextField{
+    
+    private JTextField text;
+
+    public GridButtom(JTextField text) {
+        this.text = text;
     }
 
-    public String getHola() {
-        return hola;
+   
+
+    public void setText(JTextField text) {
+        this.text = text;
+    }
+
+
+
+  
+
+    @Override
+    public String toString() {
+        return "GridButtom{" + "text=" + text + '}';
     }
     
-    public Person getPerson(){
-    return person;
-    }
-
 }

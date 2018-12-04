@@ -38,6 +38,7 @@ public class Start extends javax.swing.JDialog {
         lbAutors = new javax.swing.JLabel();
         btregister = new javax.swing.JButton();
         btEnter = new javax.swing.JButton();
+        lbAutor3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -67,6 +68,9 @@ public class Start extends javax.swing.JDialog {
             }
         });
 
+        lbAutor3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 13)); // NOI18N
+        lbAutor3.setText("Marcell Granados");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -81,7 +85,8 @@ public class Start extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btregister)
                         .addGap(208, 208, 208)
-                        .addComponent(btEnter)))
+                        .addComponent(btEnter))
+                    .addComponent(lbAutor3))
                 .addContainerGap(46, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -95,7 +100,9 @@ public class Start extends javax.swing.JDialog {
                 .addComponent(lbAutor1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lbAutor2)
-                .addGap(78, 78, 78)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lbAutor3)
+                .addGap(53, 53, 53)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btregister)
                     .addComponent(btEnter))
@@ -136,6 +143,7 @@ public class Start extends javax.swing.JDialog {
     private javax.swing.JButton btregister;
     private javax.swing.JLabel lbAutor1;
     private javax.swing.JLabel lbAutor2;
+    private javax.swing.JLabel lbAutor3;
     private javax.swing.JLabel lbAutors;
     private javax.swing.JLabel lbWelcome;
     // End of variables declaration//GEN-END:variables

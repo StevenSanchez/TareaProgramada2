@@ -35,6 +35,7 @@
                       <EmptySpace min="-2" pref="208" max="-2" attributes="0"/>
                       <Component id="btEnter" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="lbAutor3" alignment="2" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="46" max="32767" attributes="0"/>
           </Group>
@@ -51,7 +52,9 @@
               <Component id="lbAutor1" max="32767" attributes="0"/>
               <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
               <Component id="lbAutor2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lbAutor3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btregister" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btEnter" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -109,6 +112,14 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btEnterActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbAutor3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Microsoft New Tai Lue" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Marcell Granados"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

@@ -7,10 +7,10 @@ package view;
 
 import static Main.Crucigrama.varas;
 import java.awt.GridLayout;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
+import javax.swing.JTextField;
+
 import model.GridButtom;
-import model.Person;
+
 
 /**
  *
@@ -18,7 +18,7 @@ import model.Person;
  */
 public class Tablero extends javax.swing.JFrame {
     
-    private Person person;
+
     /**
      * Creates new form Tablero
      */
@@ -29,17 +29,15 @@ public class Tablero extends javax.swing.JFrame {
 
         GridLayout grid = new GridLayout(7, 7);
         pnTablero.setLayout(grid);
-                for (int i = 0; i < varas.getPersonCounter(); i++) {
-            GridButtom newGridButtom = new GridButtom(varas.getPerson(i));
+           
+            GridButtom newGridButtom = new GridButtom();
             pnTablero.add(newGridButtom);
             newGridButtom.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
-                    if (evt.getSource() == newGridButtom) {
-                        person = newGridButtom.getPerson();
-                    }
+
                 }
             });
-        }
+        
     }
 
     /**
