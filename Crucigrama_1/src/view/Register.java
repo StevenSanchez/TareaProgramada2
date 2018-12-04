@@ -113,7 +113,7 @@ public class Register extends javax.swing.JDialog {
 
     private void btAceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAceptActionPerformed
         // TODO add your handling code here:
-        person = new Person(tfUserName.getText(), pfPassword.getPassword());
+        person = new Person(tfUserName.getText(), pfPassword.getText());
         System.out.println("Registrado " + person.toString());
         dispose();
     }//GEN-LAST:event_btAceptActionPerformed
